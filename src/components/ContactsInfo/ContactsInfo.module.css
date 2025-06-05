@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.title {
+    font-size: 21px;
+    font-family: "Roboto", system-ui;
+    font-weight: 800;
+    color: #ffae00;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background: linear-gradient(to right top, #e0e5eb, #bdc9cd, #9eadab, #849189, #707467);
+    padding: 5px 10px;
+}
+
+.input {
+    border: 1px solid #ffae00;
+    padding: 3px 7px;
+}
+
+.addBtn {
+    font-size: 15px;
+    font-family: "Roboto", system-ui;
+    font-weight: 300;
+    color: #ffae00;
+    padding: 5px 10px;
+}
+
+.ul {
+    list-style: none;
+}
+
+.li {
+    background: linear-gradient(
+        135deg,
+        #d6d6d6 0%,
+        #e8e2e2 20%,
+        #c3bfbf 40%,
+        #f1dede 60%,
+        #d4d4d4 80%,
+        #e0c5c5 100%
+    );
+    padding: 15px;
+    margin: 10px 0;
+    color: #333;
+    font-size: 15px;
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+
+.li:hover {
+    transform: translateY(-2px);
+}
+
+.li img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.deleteBtn {
+    font-size: 15px;
+    font-family: "Roboto", system-ui;
+    font-weight: 300;
+    color: #ffae00;
+    padding: 5px 10px;
+}
+
+@media (max-width: 507px) {
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-left: 50px;
+    }
+    .addBtn {
+        margin: auto
+    }
+}
